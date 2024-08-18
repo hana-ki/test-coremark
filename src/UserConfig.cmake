@@ -10,7 +10,7 @@ cmake_minimum_required(VERSION 3.16)
 # Add any compiler definitions, they will be added as extra definitions
 # Example adding VERBOSE=1 will pass -DVERBOSE=1 to the compiler.
 set(USER_COMPILE_DEFINITIONS
-""
+"FLAGS_STR=\"-O2\""
 )
 
 # Undefine any previously specified compiler definitions, either built in or provided with a -D option
@@ -26,7 +26,6 @@ set(USER_UNDEFINED_SYMBOLS
 # Example 3: Adding ${CMAKE_SOURCE_DIR}/data/include to add data/include from this project.
 
 set(USER_INCLUDE_DIRECTORIES
-${CMAKE_SOURCE_DIR}/simple
 )
 
 # -----------------------------------------
