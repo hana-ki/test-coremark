@@ -131,6 +131,9 @@ portable_init(core_portable *p, int *argc, char *argv[])
     (void)argc; // prevent unused warning
     (void)argv; // prevent unused warning
 
+    // Init Xilinx platform
+    init_platform();
+
     if (sizeof(ee_ptr_int) != sizeof(ee_u8 *))
     {
         ee_printf(
@@ -150,4 +153,7 @@ void
 portable_fini(core_portable *p)
 {
     p->portable_id = 0;
+
+    // clean xilinx platform
+    cleanup_platform();
 }

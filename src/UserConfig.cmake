@@ -12,6 +12,7 @@ cmake_minimum_required(VERSION 3.16)
 set(USER_COMPILE_DEFINITIONS
 "FLAGS_STR=\"-O2\""
 "ITERATIONS=0"
+"MAIN_HAS_NOARGC=1"
 )
 
 # Undefine any previously specified compiler definitions, either built in or provided with a -D option
