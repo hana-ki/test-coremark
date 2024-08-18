@@ -11,6 +11,7 @@ cmake_minimum_required(VERSION 3.16)
 # Example adding VERBOSE=1 will pass -DVERBOSE=1 to the compiler.
 set(USER_COMPILE_DEFINITIONS
 "FLAGS_STR=\"-O2\""
+"ITERATIONS=0"
 )
 
 # Undefine any previously specified compiler definitions, either built in or provided with a -D option
